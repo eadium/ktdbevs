@@ -1,0 +1,213 @@
+body {
+	background-color: #3a67bc;
+	
+	}
+	
+	#headrow td
+	{
+		color:yellow;
+		/*border: 10px solid yellow;*/
+		background-color:blue;
+	}
+	
+table {
+	background-color: #3a67bc;
+	font-family: calibri;
+	border-width: 10px;
+	width:100%;
+	}
+	
+h2 {
+	font-size: 30px;
+	 color: #F6F8FA;
+	}
+	
+
+	
+#firsttd {
+	background-color: #3a67bc;
+	border-width: 0px;
+	width: 1100px;
+	height: 100px;
+	font-size: 10px;
+	color: #000000;
+	text-align: right;
+	}
+	
+#secondtd {
+	background-color: #3a67bc;
+	width: 800px;
+	height: 200px;
+	}
+	
+#thirdtd {
+	background-color: #051B37;
+	width: 800px;
+	height: 50px;
+	font-size: 16px;
+	color: #FFFFFF;
+	text-align:right;
+	padding-right: 30px;
+	}
+
+#logo {
+	background-color: 003C72;
+	height:280px;
+	text-align: center;
+	.center{
+		display: block;
+		margin: 0 auto;
+	}
+	}
+#name {
+	color: #000000;
+	text-align: right;
+	font-size: 30px;
+	float: right;
+	padding: 10px 5px 0px 0px;
+	}
+#secname {
+	font-size: 154px;
+	}
+#logon {
+	
+	width: 210px;
+	font-size: 20px;
+	padding: 0px 15px 15px 15px;
+	background-color: #051B37;
+	color: white;
+	}
+#comt {
+	font-size: 28px;
+	 color: #000000;
+	}
+#hello {
+	font-size: 20px;
+	color: #000000;
+	}
+#menu {
+	font-size: 20px;
+	margin: -1px 0px 0px 0px;
+	float: top;
+	border-radius: 0px 0px 0px 0px;
+	border: 1px solid #CCCCCC;
+	}
+#submenu {
+	border-radius: 0px;
+	margin-bottom:25px;
+	}
+#log {
+	margin: 60px 20px 300px 20px;
+	float: bottom;
+	}
+#maintable, #mainupdate, #maininput, #maindelete{
+	margin: 10px 10px 10px 10px;
+	font-size: 16px;
+	border-radius: 0px;
+	color:black;
+	background-color:white;
+	width:97%;
+	}
+	
+	#maintable a:visited
+	{
+		color:black;
+	}
+	
+	#mainupdate>tbody>tr:nth-child(1), #maintable>tbody>tr:nth-child(1),#maininput>tbody>tr:nth-child(1),#maindelete>tbody>tr:nth-child(1),
+	#deleterow>tbody>tr:nth-child(1){
+		color:yellow;
+		border: 10px solid yellow;
+		background-color:blue;
+	}
+
+	#maintable{
+		margin:0px 0px 0px 0px;
+	}
+	
+#deleterow tr {
+	border-radius: 0px;
+	font-size: 16px;
+	margin: 10px 10px 10px 10px;
+	width:97%;
+	background-color:white;
+	border:1px solid black;
+	}
+	#deleterow>tbody>tr:nth-child(1){
+		background-color:blue;
+	}
+	
+
+#tabsum
+{
+	color:white;
+	font-size:20px;
+	width:450px;
+	border-style:solid;
+	border-width:1px;
+	margin-bottom:20px;
+	margin-top:20px;
+}
+
+#tabsum tr td:nth-child(2){
+
+}
+
+#tabsum tr:nth-child(1){
+	
+}
+
+#opsum a:hover{
+	color:orange;
+}
+
+#opsum {
+	width:450px;
+	margin:0 auto;
+
+}
+	
+#updaterow {
+	border-radius: 0px;
+	font-size: 16px;
+	margin: 10px 10px 10px 10px;
+	color: white;
+	width:97%;
+	
+	}
+#yesnotable {
+	border-radius: 10px;
+	background-color: blue;
+	width:12%;
+	margin-top:18px;
+	}
+#logonpage {
+	background-color: #32CD32;
+	text-align: center;
+	color: #E52968;
+	padding: 35px 0px 0px 0px;
+	font-size: 25px;
+	
+	}
+#ztopmenu, #ftopmenu, #stopmenu, #ttopmenu, #frtopmenu, #fftopmenu, #sxtopmenu {
+	text-decoration: none;
+}
+#gena {
+	border-radius: 0px 0px 0px 0px;
+	font-size: 12px;
+	}
+a:link {
+	color: #000000;
+	}
+a:visited {
+	color: #000000;
+	}
+a:hover {
+	color: #000000;
+	}
+.center 
+{
+	width:100%;
+
+}
+

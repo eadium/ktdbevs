@@ -1,0 +1,12 @@
+* {margin:0; padding:0}
+body {font:12px Verdana,Arial;}
+p {line-height:1.4; margin-bottom:12px}
+#slider {float:left; position:relative; overflow:auto; width:1300px; height:280px}
+#slider ul {position:absolute; list-style:none; top:0; left:0; }
+#slider li {float:left; width:1300px; list-style:none;height:280px}
+#container
+{
+	margin-top:25px;
+	margin-left:7%;
+}
+

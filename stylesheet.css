@@ -5,6 +5,12 @@ body {
 	font-family: Century Gothic;
 }
 
+a:-webkit-any-link {
+	color: -webkit-link;
+	cursor: pointer;
+	text-decoration: none;
+}
+
 #headrow td {
 	color:black;
 	background-color:lightgrey;
@@ -125,6 +131,14 @@ input[type=submit]:hover {
 	font-size: 24px;
 	margin-left: 3px;
 	text-align: center;
+}
+
+#user_block {
+	float: left;
+}
+
+#firsttd img {
+	float: right;
 }
 
 #submenu {

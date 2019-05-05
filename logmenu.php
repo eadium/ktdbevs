@@ -107,7 +107,7 @@ IF ($_SESSION['logon']==false){
 }ELSE{
 	IF($_POST['exit']==false){
 		
-		ECHO ("<a id='hello'><strong>Пользователь: ".$_SESSION['user']."</strong></a>");
+		ECHO ("<a id='hello'><i>".$_SESSION['user']."</i></a>");
 		
 		$c=OCILogon("sergeyhalzev", "pass", "curvabd");
 	if (!$c){

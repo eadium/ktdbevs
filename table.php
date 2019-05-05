@@ -69,7 +69,7 @@ error_reporting( E_ERROR );
 					ECHO($html_buffer);
 					$html=$html.$html_buffer;
 				}ELSE{
-					$html_buffer="<TR BGCOLOR='yellow'>";
+					$html_buffer="<TR>";
 					ECHO($html_buffer);
 					$html=$html.$html_buffer;
 				}
@@ -177,7 +177,7 @@ error_reporting( E_ERROR );
 			IF (($color % 2)!='0' ){
 				ECHO("	<TR >");
 			}ELSE{
-				ECHO ("	<TR BGCOLOR='yellow'>");
+				ECHO ("	<TR>");
 			}
 			$color++;
 			$i=1;
@@ -311,7 +311,7 @@ error_reporting( E_ERROR );
 			IF (($color % 2)!='0' ){
 				ECHO("	<TR >");
 			}ELSE{
-				ECHO ("	<TR BGCOLOR='yellow'>");
+				ECHO ("	<TR>");
 			}
 			$color++;
 			
@@ -405,7 +405,7 @@ error_reporting( E_ERROR );
 			IF (($color % 2)!=0 ){
 				ECHO("	<TR >");
 			}ELSE{
-				ECHO ("	<TR BGCOLOR='yellow'>");
+				ECHO ("	<TR>");
 			}
 			$color++;
 			$i=1;
@@ -496,7 +496,7 @@ error_reporting( E_ERROR );
 			IF (($color % 2)!=0 ){
 				ECHO("	<TR BGCOLOR='008B8B'>");
 			}ELSE{
-				ECHO ("	<TR BGCOLOR='yellow'>");
+				ECHO ("	<TR>");
 			}
 			$color++;
 			$i=1;

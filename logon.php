@@ -1,6 +1,6 @@
-<?PHP  
+<?PHP
 error_reporting( E_ERROR );
-session_start(); 
+session_start();
 	$num_table=4;
 IF ($_SESSION['logon']==false){
 	IF($_POST['aut']==false){
@@ -9,13 +9,13 @@ IF ($_SESSION['logon']==false){
 			$rule_s[$i]=false;
 			$i++;
 			}
-	
+
 		$rule_e[1]=false;
 		$rule_e[2]=false;
 		$rule_e[3]=false;
 		$rule_admin=false;
 
-		ECHO ("	<FORM ACTION='logon.php' METHOD='POST'>
+		ECHO ("<FORM ACTION='logon.php' METHOD='POST'>
 					<TABLE id='logon' BORDER=0 ALIGN='center' WIDTH='300px'>
 						<TR><TD><CENTER><strong>Логин</strong></CENTER></TD></TR>
 						<TR><TD><CENTER><INPUT TYPE='text' NAME='user_name' ></CENTER></TD></TR>
@@ -24,28 +24,28 @@ IF ($_SESSION['logon']==false){
 					</TABLE>
 						<INPUT TYPE='hidden' NAME='aut' VALUE=true >
 						<INPUT TYPE='submit' VALUE='Войти' >
-						</FORM>");
+				</FORM>");
 	}ELSE{
-	
+
 		$user_nam_form=$_POST['user_name'];
 		$user_pass_form=$_POST['user_pass'];
 		//$user_pass_form=md5($user_pass_form);
 		ECHO("user_name=".$user_nam_form."<br>user_pass=".$user_pass_form."<br>");
-		
+
 		INCLUDE "connect.php";
 
-		$select_u="	SELECT users_id, users_login, users_password, users_rule_see , users_rule_edit , users_rule_admin "." 
-								FROM users 
-								WHERE 1=1 "." 
-									AND users_login = '".$user_nam_form."' 
+		$select_u="	SELECT users_id, users_login, users_password, users_rule_see , users_rule_edit , users_rule_admin "."
+								FROM users
+								WHERE 1=1 "."
+									AND users_login = '".$user_nam_form."'
 									AND users_password = '".$user_pass_form."' ";
-	
+
 		ECHO $select_u;
-		$su = OCIParse($c , $select_u); 
+		$su = OCIParse($c , $select_u);
 		OCIExecute($su , OCI_DEFAULT);
-			
+
 		ECHO $su;
-		
+
 		WHILE (OCIFetch($su)) {
 			$id=OCIResult($su, "USERS_ID");
 			$users_login = OCIResult($su , "USERS_LOGIN");
@@ -71,9 +71,9 @@ IF ($_SESSION['logon']==false){
 					}
 					$i++;
 				}
-				
-		
-		
+
+
+
 				IF ($users_rule_edit[0]=='1'){
 					$rule_e[1]=true;
 				}ELSE{
@@ -112,12 +112,12 @@ IF ($_SESSION['logon']==false){
 	$_SESSION['rule_e']=$rule_e;
 	$_SESSION['rule_admin']=$rule_admin;
 	$_SESSION['user']=$users_login;
-	
+
 }ELSE{
 	IF($_POST['exit']==false){
-		
-		
-		
+
+
+
 		$c=OCILogon("sergeyhalzev", "pass", "curvabd");
 	if (!$c){
 		echo "Невозможно подключиться к базе:" . var_dump(OCIError());
@@ -126,26 +126,17 @@ IF ($_SESSION['logon']==false){
 $s=OCIParse($c, "SELECT SUM (ope_cost) FROM operacii");
 OCIExecute($s, OCI_DEFAULT);
 while (OCIFetch($s)){
-echo ("
-<div id='opsum'><table id='tabsum' border='1' cellspacing='2' cellpadding ='1'>
-						<tr>
-							<td>Суммарная стоимость операций </td>
-							<td><a href='./operacii.php'>".OCIResult($s, 1)."</a></td> 
-						</tr>");
-						
+echo ("");
+
 }
 
 $s=OCIParse($c, "SELECT SUM (ope_dur) FROM operacii");
 OCIExecute($s, OCI_DEFAULT);
 while (OCIFetch($s)){
 echo ("
-						<tr>
-							<td>Суммарная длительность операций </td>
-							<td><a href='./operacii.php'>".OCIResult($s, 1)."</a></td> 
-						</tr>
-						
+
 						");
-		
+
 }
 /*
 $s=OCIParse($c, "SELECT SUM (ope_dur) FROM operacii");
@@ -154,21 +145,18 @@ while (OCIFetch($s)){
 echo ("
 						<tr>
 							<td>Суммарная длительность операций =</td>
-							<td><a href='http://localhost/asu/operacii.php'>".OCIResult($s, 1)."</a></td> 
+							<td><a href='http://localhost/asu/operacii.php'>".OCIResult($s, 1)."</a></td>
 						</tr>
-						
+
 						");
-		
+
 }
  Дополнительный пересчет */
 
-echo (" </table> </div>");
+echo ("");
 
-
-		
-		
 	}ELSE{
-		
+
 		unset($_SESSION['user']);
 		unset($_SESSION['rule_e']);
 		unset($_SESSION['rule_s']);

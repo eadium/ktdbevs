@@ -18,10 +18,9 @@
 						<div  width="90%" height="170" align="center">					
 							<img src="images/1.gif" width="700" height="180"  alt="Image One" />
 						</div>
+						<?php INCLUDE "logmenu.php";?>
 					</td>
-					<td valign="top"><?php
-					INCLUDE "logmenu.php";?>
-					</td>
+
 				</tr>
 				<tr>
 					<td id="secondtd">

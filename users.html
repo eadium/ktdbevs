@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<link type="text/css" rel="stylesheet" href="style.css"/>
+		<title>ASU TP</title>
+		<script type="text/javascript" src="script.js"></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	</head>	
+	
+	<body>
+		
+		<center>
+			<table>
+				<tr>
+					<td id="firsttd">		
+						<div  width="90%" height="170" align="center">					
+							<img src="images/1.jpg" width="700" height="180"  alt="Image One" />
+						</div>
+					</td>
+					<td valign="top"><a id='hello'><strong>Пользователь: admin</strong></a>	<FORM ACTION='logon.php' METHOD='POST'>
+						<INPUT TYPE='hidden' NAME='exit' VALUE=true >
+						<INPUT TYPE='submit' VALUE='Выйти' >
+						</FORM>					</td>
+				</tr>
+				<tr>
+					<td id="secondtd">
+		
+							<table width="100%">
+								<tr>
+									<td width="10%" valign="top">﻿<TABLE id='menu' BORDER='0' CELLPADDING='0' CELLSPACING='0' HEIGHT='100%' WIDTH='100%' >
+			<TR>
+				<TD ALIGN='left' VALIGN='middle'><A id='ztopmenu' HREF='index.php'>Главная</A></TD> </TR><TR>	<TD ALIGN='left' VALIGN='middle'><A id='ftopmenu' HREF='docs.php'>Документы</A></TD> </TR><TR>	<TD ALIGN='left' VALIGN='middle'><A id='stopmenu' HREF='PCB.php'>Печатные платы</A></TD> </TR><TR>	<TD ALIGN='left' VALIGN='middle'><A id='ttopmenu' HREF='personal.php'>Персонал</A></TD> </TR><TR>	<TD ALIGN='left' VALIGN='middle'><A id='frtopmenu' HREF='operacii.php'>Операции</A></TD> </TR><TR>	<TD ALIGN='left' VALIGN='middle'><A id='fftopmenu' HREF='users.php'>Пользователи</A></TD> </TR><TR>	<TD ALIGN='left' VALIGN='middle'><A id='sxtopmenu' HREF='radioelements.php'>Радиокомпоненты</A></TD></TR>
+	</TABLE>								</td>
+									<td>
+							<BR>
+			<H2 ALIGN='CENTER'>
+			Пользователи АСУ
+			</H2> 
+					<CENTER>
+						<TABLE id='maintable' BORDER=0 WIDTH=97%>
+								<TR id='headrow' BGCOLOR='FFFFFF'>		<TD>
+										<CENTER>
+											id
+										</CENTER>
+									</TD>		<TD>
+										<CENTER>
+											Логин
+										</CENTER>
+									</TD>		<TD>
+										<CENTER>
+											Пароль
+										</CENTER>
+									</TD>		<TD>
+										<CENTER>
+											Права просмотра
+										</CENTER>
+									</TD>		<TD>
+										<CENTER>
+											Права редактирования
+										</CENTER>
+									</TD>		<TD>
+										<CENTER>
+											Права администратора
+										</CENTER>
+									</TD>				</TR><TR >
+									<TD>
+										<CENTER>1</CENTER>
+						</TD>
+									<TD>
+										<CENTER>admin</CENTER>
+						</TD>
+									<TD>
+										<CENTER>admin</CENTER>
+						</TD>
+									<TD>
+										<CENTER>111</CENTER>
+						</TD>
+									<TD>
+										<CENTER>111</CENTER>
+						</TD>
+									<TD>
+										<CENTER>1</CENTER>
+						</TD></TR><TR>
+									<TD>
+										<CENTER>2</CENTER>
+						</TD>
+									<TD>
+										<CENTER>technolog</CENTER>
+						</TD>
+									<TD>
+										<CENTER>technolog</CENTER>
+						</TD>
+									<TD>
+										<CENTER>111</CENTER>
+						</TD>
+									<TD>
+										<CENTER>111</CENTER>
+						</TD>
+									<TD>
+										<CENTER>0</CENTER>
+						</TD></TR><TR >
+									<TD>
+										<CENTER>3</CENTER>
+						</TD>
+									<TD>
+										<CENTER>worker</CENTER>
+						</TD>
+									<TD>
+										<CENTER>worker</CENTER>
+						</TD>
+									<TD>
+										<CENTER>111</CENTER>
+						</TD>
+									<TD>
+										<CENTER>000</CENTER>
+						</TD>
+									<TD>
+										<CENTER>0</CENTER>
+						</TD></TR> 	</TABLE>
+					</CENTER> <br>	<TABLE id='submenu' BORDER='0' BGCOLOR = #003153 CELLPADDING='0' CELLSPACING='0' HEIGHT=25px WIDTH='100%'>
+				<TR>	<TD ALIGN='center' VALIGN='middle' >
+						<FORM ACTION='/users.php' METHOD='get'>
+							<INPUT TYPE=hidden NAME=action VALUE=insert>
+							<INPUT TYPE=submit VALUE='Вставить'>
+						</FORM>
+					</TD>	<TD ALIGN='center' VALIGN='middle' >
+						<FORM ACTION='/users.php' METHOD='get'>
+							<INPUT TYPE=hidden NAME=action VALUE=update>
+							<INPUT TYPE=submit VALUE='Изменить'>
+						</FORM>
+					</TD>	<TD ALIGN='center' VALIGN='middle' >
+						<FORM ACTION='/users.php' METHOD='get'>
+							<INPUT TYPE=hidden NAME=action VALUE=delete>
+							<INPUT TYPE=submit VALUE='Удалить'>
+						</FORM>
+					</TD>		</TR>
+			</TABLE>								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td id="thirdtd" colspan="2">
+						© АСУ ТП "Генератор тестовых сигналов" Все права защищены. 2018
+					</td>
+				</tr>
+			</table>
+		</center>
+	</body>
+</html>
+

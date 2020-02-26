@@ -118,7 +118,7 @@ IF ($_SESSION['logon']==false){
 
 
 
-		$c=OCILogon("sergeyhalzev", "pass", "curvabd");
+		$c=OCILogon("scott", "tiger", "orcl");
 	if (!$c){
 		echo "Невозможно подключиться к базе:" . var_dump(OCIError());
 		die();

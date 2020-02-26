@@ -109,7 +109,7 @@ IF ($_SESSION['logon']==false){
 		
 		ECHO ("<a id='hello'><i>".$_SESSION['user']."</i></a>");
 		
-		$c=OCILogon("sergeyhalzev", "pass", "curvabd");
+		$c=OCILogon("scott", "tiger", "orcl");
 	if (!$c){
 		echo "Невозможно подключиться к базе:" . var_dump(OCIError());
 		die();
@@ -121,7 +121,8 @@ IF ($_SESSION['logon']==false){
 		ECHO ("	<FORM ACTION='logon.php' METHOD='POST'>
 						<INPUT TYPE='hidden' NAME='exit' VALUE=true >
 						<INPUT TYPE='submit' VALUE='Выйти' >
-						</FORM>");
+						</FORM>
+						</td>");
 	}
 }
 

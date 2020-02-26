@@ -16,7 +16,7 @@
 				<tr>
 					<td id="firsttd">		
 						<div  width="90%" height="170" align="center">					
-							<img src="images/1.gif" width="700" height="180"  alt="Image One" />
+						<img src="images/title_image.jpg" width="700" height="180"  alt="Image One" />
 						</div>
 						<?php INCLUDE "logmenu.php";?>
 					</td>
@@ -27,9 +27,8 @@
 		
 							<table width="100%">
 								<tr>
-									<td width="10%" valign="top"><?php
-									INCLUDE "menu.php";
-								?>
+									<td width="10%" valign="top">
+										
 								</td>
 									<td>
 						

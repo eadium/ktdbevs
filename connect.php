@@ -1,9 +1,9 @@
 <?PHP 
 error_reporting( E_ERROR );
-	$c=OCILogon("sergeyhalzev", "pass", "curvabd"); 
+	$c=OCILogon("scott", "tiger", "orcl"); 
 	
 	if ( ! $c ) { 
-		die("<H2 ALIGN='center'>Ошибка подключения к базе данных!</H2>"); 
-		echo "Невозможно подключится к базе: " . var_dump( OCIError() ); 
+		die("<H2 ALIGN='center'>РћС€РёР±РєР° РїРѕРґРєР»СЋС‡РµРЅРёСЏ Рє Р±Р°Р·Рµ РґР°РЅРЅС‹С…!</H2>"); 
+		echo "ORCL CONN ERROR: " . var_dump( OCIError() ); 
 		}
 ?>

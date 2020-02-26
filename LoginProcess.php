@@ -18,7 +18,7 @@
       ociExecute($s);
       
 
-      $s = ociParse($c, "SELECT PERS_ID, PERS_SURNAME, PERS_NAME, PERS_POSITION, PERS_RULE FROM SERGEYHALZEV.PERSONAL WHERE PERS_LOGIN = '" . strtoupper($login)."'");
+      $s = ociParse($c, "SELECT PERS_ID, PERS_SURNAME, PERS_NAME, PERS_POSITION, PERS_RULE FROM scott.PERSONAL WHERE PERS_LOGIN = '" . strtoupper($login)."'");
       ociExecute($s);
       while (OCIFetch($s))
       {

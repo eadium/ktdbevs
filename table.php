@@ -47,7 +47,7 @@ error_reporting( E_ERROR );
 			$html_buffer=" 
 					<CENTER>
 						<TABLE id='maintable' BORDER=0 WIDTH=97%>
-								<TR id='headrow' BGCOLOR='FFFFFF'>";
+								<TR id='headrow'>";
 			ECHO($html_buffer);
 			$html=$html.$html_buffer;					
 			$i=1;
@@ -161,7 +161,7 @@ error_reporting( E_ERROR );
 			<FORM ACTION='insert.php' METHOD='POST'>
 				<CENTER>
 					<TABLE id='maininput' BORDER=0 WIDTH=97%>
-						<TR BGCOLOR='FFFFFF'>");
+						<TR >");
 		$i=1;
 		WHILE(!EMPTY($table['col_'.$i.'_name'])){
 			ECHO("			<TD>
@@ -283,7 +283,7 @@ error_reporting( E_ERROR );
 			<FORM ACTION='update.php' METHOD='POST'>
 				<CENTER>
 					<TABLE id='mainupdate' BORDER=0 WIDTH=97%>
-						<TR BGCOLOR='FFFFFF'>");
+						<TR >");
 		$i=1;
 		WHILE(!EMPTY($table['col_'.$i.'_name'])){
 			ECHO("			<TD>
@@ -378,7 +378,7 @@ error_reporting( E_ERROR );
 			<FORM ACTION='delete.php' METHOD='post'>
 				<CENTER>
 					<TABLE id='maindelete' BORDER=0 WIDTH=97%>
-						<TR BGCOLOR='FFFFFF'>");
+						<TR >");
 		$i=1;
 		WHILE(!EMPTY($table['col_'.$i.'_name'])){
 			ECHO("			<TD>
@@ -468,8 +468,8 @@ error_reporting( E_ERROR );
 		ECHO ("
 			<FORM ACTION='pdf/create_pdf.php' METHOD='post'>
 				<CENTER>
-					<TABLE id='gena' BORDER=0 WIDTH=97%>
-						<TR BGCOLOR='FFFFFF'>");
+					<TABLE id='gena'  WIDTH=97%>
+						<TR >");
 		$i=1;
 		WHILE(!EMPTY($table['col_'.$i.'_name'])){
 			ECHO("			<TD>
@@ -494,7 +494,7 @@ error_reporting( E_ERROR );
 			};
 
 			IF (($color % 2)!=0 ){
-				ECHO("	<TR BGCOLOR='008B8B'>");
+				ECHO("	<TR>");
 			}ELSE{
 				ECHO ("	<TR>");
 			}

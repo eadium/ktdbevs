@@ -94,7 +94,7 @@ input[type=submit]:hover {
 	color: #000;
 	text-align:right;
 	padding-right: 30px;
-	visibility: hidden;
+	visibility: visible;
 	}
 
 #logo {
